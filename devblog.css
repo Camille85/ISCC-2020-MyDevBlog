@@ -1,0 +1,57 @@
+.navigation{
+    background-color: palegoldenrod; 
+    border: black 3px solid;
+    margin-top: 2px;
+    padding-left: 15px;
+}
+
+.lien{
+    padding-right: 50px;
+    margin: 0px;
+    color: black;
+    text-align: right;
+    vertical-align: middle ;
+}
+
+body{
+    font-family: Open-Sans;
+    background-color: #fcecd9;
+}
+
+#tit{
+font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+background-color: palegreen;
+border: black 3px solid;
+padding-left: 15px;
+font-size: large;
+}
+
+.art1{
+    position: relative;
+    left: 325px;
+}
+
+.art2{
+    position: relative;
+    left: 425px;
+}
+
+.art3{
+    position: relative;
+    left: 525px;
+}
+
+.art4{
+    position: relative;
+    left: 625px;
+}
+
+.art5{
+    position: relative;
+    left: 725px;
+}
+
+
+
+
+@font-face { font-family: Open-Sans; src: url("OpenSans-Regular.ttf"); }
