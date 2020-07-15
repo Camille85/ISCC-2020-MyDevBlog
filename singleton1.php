@@ -18,3 +18,7 @@ function connect_to_database(){
 <?php
 connect_to_database();
 ?>
+
+
+
+

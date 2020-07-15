@@ -15,12 +15,12 @@
 
 body{
     font-family: Open-Sans;
-    background-color: #fcecd9;
+    background-color: #dad6d6;
 }
 
 #tit{
 font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-background-color: palegreen;
+background-color: rgb(169, 221, 169);
 border: black 3px solid;
 padding-left: 15px;
 font-size: large;
@@ -51,7 +51,20 @@ font-size: large;
     left: 725px;
 }
 
+#footer{
+    border: 3px solid black;
+    background-color:rgb(169, 221, 169);
+    padding-left: 15px;
+}
+
+#connexion{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    padding-right: 15px;
+}
 
 
 
 @font-face { font-family: Open-Sans; src: url("OpenSans-Regular.ttf"); }
+

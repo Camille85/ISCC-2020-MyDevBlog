@@ -30,7 +30,7 @@ if(isset($_POST['pseudo'],$_POST['mdp'])){
 if($AfficherFormulaire==1){
     ?>
     <br/>
-    <form method="post" action="">
+    <form method="post" action="http://localhost:8888/ISCC-2020/ISCC-2020-MyDevBlog/front.php?page=inscription">
         <input type="text" name="pseudo" placeholder= "Pseudo">
         <br />
         <input type="password" name="mdp" placeholder= "Mot de passe">
