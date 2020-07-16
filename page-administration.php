@@ -7,23 +7,46 @@
     </head>
     <body>
 
-    <h2>Ajouter un article </h2>
-    <form method="post" action="article.php">
-    <input type="text" name="titre" placeholder= "titre">
-    <br />
-    <input type="text" name="image" placeholder="image">
-    <br />
-    <input type="date" name="date" placeholder= "date">
-    <br />
-    <input type="text" name="auteur" placeholder= "auteur">
-    <br />
-    <input type="text" name="contenu" placeholder= "Contenu">
-    <br />
-    <input type="text" name="extrait" placeholder= "extrait">
-    <br />
-    <input type="submit" value="Publier" >
-    </form> 
-        
-            
-    </body>
-</html>
+    <?php
+try {
+$bdd = new PDO("mysql:host=localhost;dbname=DevBlog;charset=utf8", "root", "root"); }
+catch (PDOexception $e){
+    var_dump($e);
+}
+
+if(isset($_POST['article_titre'], $_POST['article_image'],$_POST['article_auteur'], $_POST['article_contenu'],$_POST['article_extrait'],)) {
+   if(!empty($_POST['article_titre']) AND !empty($_POST['article_contenu'])) {
+      
+      $article_titre = htmlspecialchars($_POST['article_titre']);
+      $article_image = htmlspecialchars($_POST['article_image']);
+      $article_auteur = htmlspecialchars($_POST['article_auteur']);
+      $article_contenu = htmlspecialchars($_POST['article_contenu']);
+      $article_extrait = htmlspecialchars($_POST['article_extrait']);
+      $ins = $bdd->prepare("INSERT INTO Articles (Titre, Image, Date, Auteur, Contenu, Extrait) VALUES (?, ?, NOW(), ?, ?, ?)");
+     
+   $ins->execute(array($article_titre, $article_image, $article_auteur, $article_contenu, $article_extrait)); 
+      $message = 'Votre article a bien été posté';
+   } else {
+      $message = 'Veuillez remplir tous les champs';
+   }
+}
+?>
+<div class=mestitres>
+<h2> Ajouter un article</h2>
+</div>
+   <form method="POST" action="page-administration.php" class=form>
+      <input type="text" name="article_titre" placeholder="Titre" class= form2/><br /><br />
+      <input type="file" name="article_image" placeholder="Image" class= form2/><br /><br />
+      <input type="text" name="article_auteur" placeholder="Auteur" class= form2/><br /><br />
+      <textarea name="article_contenu" placeholder="Contenu de l'article" class= form2></textarea><br /><br />
+      <input type="text" name="article_extrait" placeholder="Extrait" class= form2 /><br /><br />
+      <input type="submit" value="Envoyer l'article" />
+   </form>
+   <br />
+   <?php if(isset($message)) { echo $message; } ?>
+
+<a href="back.php?page=utilisateurs">Tout les utilisateurs</a> <p>
+   <a href="back.php?page=deconnexion">Déconnexion</a>
+
+
+

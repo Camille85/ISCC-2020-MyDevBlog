@@ -27,7 +27,9 @@ if(isset($_POST['connexion'])) {
                     
                     $_SESSION['pseudo'] = $Pseudo; 
                     echo "Connexion réussie.";
+                    header("Location: http://localhost:8888/ISCC-2020/ISCC-2020-MyDevBlog/back.php?page=administration");
                 }
+
             }
         }
     }

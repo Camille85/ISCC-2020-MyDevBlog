@@ -10,35 +10,21 @@
     <body>
         
         
-        <p> Description du projet</p>
+        <p> Ce site est dédié à l'univers sneakers. Passionné par les sneakers, depuis maintenant quelques années, 
+        j'ai décidé de créer ce site pour vous partager les dernières actualités sneakers ! Ce site est ouvert à tous !</p>
     
         <p>Les 5 derniers articles :</p>
         <?php
-    function connect_to_database(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $databasename = "DevBlog";
+        $bdd = new PDO("mysql:host=localhost;dbname=DevBlog;charset=utf8", "root", "root"); 
 
-    try{
-        $pdo = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $articles = $bdd->query('SELECT * FROM Articles ORDER BY id DESC LIMIT 5');
+            ?>
 
-       
-        $sth = $pdo->prepare("SELECT * FROM Articles LIMIT 5");
-        $sth->execute();
         
-        $result = $sth->fetchAll();
-        var_dump($result);
+        <?php while($a = $articles->fetch()) { ?>
+            <a href="front.php?page=article&id=<?= $a['Id'] ?>"><?= $a['Titre']?></a>
+        <?php } ?>
         
-    
-
-        return $pdo;
-    } catch (PDOException $e){
-        echo "Connection failed : " . $e->getMessage();
-    }
-}
-?>
 
         
             

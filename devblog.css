@@ -13,9 +13,12 @@
     vertical-align: middle ;
 }
 
+.lien:hover{
+    color: rgb(81, 134, 231);
+}
 body{
     font-family: Open-Sans;
-    background-color: #dad6d6;
+    background-color: #eeecec;
 }
 
 #tit{
@@ -64,7 +67,29 @@ font-size: large;
     padding-right: 15px;
 }
 
+.form{
+    
+    text-align: center;
+}
 
+.form2{
+    height: 30px;
+    width: 250px;
+    margin: 10px;
+    border: 2px solid #e6e6e6; 
+}
+.form:hover{ 
+    border-color: #17c1ff; 
+}
+
+.mestitres{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    text-align: center;
+}
+
+#bjr{
+    color: blue;
+}
 
 @font-face { font-family: Open-Sans; src: url("OpenSans-Regular.ttf"); }
 
