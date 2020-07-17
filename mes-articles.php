@@ -16,12 +16,14 @@ $articles = $bdd->query('SELECT * FROM Articles ORDER BY id DESC ');
     <table class=tableau>
            <tr>
         <?php while($a = $articles->fetch()) { ?>
-            <td><a href="front.php?page=article&id=<?= $a['Id'] ?>" class="lien"><?= $a['Titre']?></a>
+            <td><a href="front.php?page=article&id=<?= $a['Id'] ?>" class="lien"><img src="<?= explode("/", $a['Image']) [6] ?>" width="200" height="200"/></a> </br>
+            <a href="front.php?page=article&id=<?= $a['Id'] ?>" class="lien"><?= $a['Titre']?></a>
             <div><?= $a['Extrait']?></div></td>
         <?php } ?>
         </tr>
         </table>
-   
+
+        
     
     
       

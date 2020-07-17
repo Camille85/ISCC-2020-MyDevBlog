@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(214, 252, 252);
+}
+
+#titreCV{
+    position : relative;
+    left: 25%;
+    border-color: black;
+    border-style: solid;
+    background-color:rgb(250, 246, 193);
+    margin-left: 13%x;
+    padding-left: 1%;
+    width: 69%;}
+
+#lien{
+    position: relative;
+    left: 5%;
+    bottom: 125px;
+}
+
+
+#pieddepage{
+background-color: rgb(200, 252, 200);
+border-color: black;
+    border-style: solid;
+    margin-left: 10%x;
+    padding-left: 1%;
+    width: 89%; 
+    position: relative;
+    left: 5%;
+    bottom: 260px;
+}
+
+#image{
+    position : relative;
+    left: 5%;
+    bottom: 120px;
+}
+
+#compétences{
+    position: relative;
+    left: 629px;
+    bottom: 377px;
+    background-color: rgb(200, 252, 200);
+    border-color: black;
+    border-style: solid;
+    margin-left: 7%;
+    padding-left: 1%;
+    width: 43%; 
+}
+
+#profil{
+    position: relative;
+    bottom: 100px;
+    background-color: rgb(255, 232, 236);
+    border-color: black;
+    border-style: solid;
+    margin-left: 5%;
+    padding-left: 1%;
+    width: 40%; 
+    }
+
+    #intérêt{
+        background-color: rgb(250, 246, 193);
+        border-color: black;
+        border-style: solid;
+        margin-left: 10%x;
+        padding-left: 1%;
+        width: 89%; 
+        position: relative;
+        left: 5%;
+        bottom: 300px;
+        }
+

@@ -27,8 +27,10 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
 </head>
 <body>
    <h1 id=titl><?= $titre ?></h1>
-   <img src="<?= explode("/", $image) [6] ?>" width="300" height="300" id=img/> 
-   <p ><?= $auteur ?></p>
+   <div class=img ><img src="<?= explode("/", $image) [6] ?>" width="300" height="300" /> </div>
+   <p ><?= $date ?></p>
    <p id=contenu><?= $contenu ?></p>
+</br>
+   <p><?= $auteur ?></p>
 </body>
 </html>
