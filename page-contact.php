@@ -33,16 +33,16 @@ if(isset($_POST['user_login'], $_POST['user_mail'],$_POST['message'])) {
    <form method="POST" class=form >
    <div>
 
-      <input type="text" name="user_login"  class= form2 placeholder="Votre nom" /><br /><br />
+      <input type="text" name="user_login" id="name" class="form2" placeholder="Votre nom" /><br /><br />
     </div>
       <div>
-      <input type="mail" name="user_mail"  class= form2 placeholder="Votre e-mail" /><br /><br />
+      <input type="mail" name="user_mail"  id="mail" class="form2" placeholder="Votre e-mail" /><br /><br />
       </div>
       <div>
-      <textarea name="message" class= form2 placeholder="Comment améliorer mon site ?"></textarea><br /><br />
+      <textarea name="message" id="msg" class="form2" placeholder="Comment améliorer mon site ?"></textarea><br /><br />
       </div>
       <div>
-      <input type="submit" value="Envoyer" />
+      <input type="submit" id="button" class="form2" value="Envoyer" />
       </div>
    </form>
    

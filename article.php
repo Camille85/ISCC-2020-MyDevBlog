@@ -26,9 +26,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
    <meta charset="utf-8">
 </head>
 <body>
-   <h1><?= $titre ?></h1>
-   <img src="<?= explode("/", $image) [6] ?>" width="300" height="300"/> 
-   <p><?= $auteur ?></p>
-   <p><?= $contenu ?></p>
+   <h1 id=titl><?= $titre ?></h1>
+   <img src="<?= explode("/", $image) [6] ?>" width="300" height="300" id=img/> 
+   <p ><?= $auteur ?></p>
+   <p id=contenu><?= $contenu ?></p>
 </body>
 </html>

@@ -35,18 +35,23 @@ if(isset($_POST['article_titre'], $_POST['article_image'],$_POST['article_auteur
 <h2> Ajouter un article</h2>
 </div>
    <form method="POST" action="page-administration.php" class=form>
-      <input type="text" name="article_titre" placeholder="Titre" class= form2/><br /><br />
-      <input type="file" name="article_image" placeholder="Image" class= form2/><br /><br />
-      <input type="text" name="article_auteur" placeholder="Auteur" class= form2/><br /><br />
-      <textarea name="article_contenu" placeholder="Contenu de l'article" class= form2></textarea><br /><br />
-      <input type="text" name="article_extrait" placeholder="Extrait" class= form2 /><br /><br />
-      <input type="submit" value="Envoyer l'article" />
+      <input type="text" name="article_titre" id="mdp" class="form2" placeholder="Titre" class= form2/><br />
+      <br />
+      <input type="file" name="article_image" id="mdp" class="form2" placeholder="Image" class= form2/><br />
+      <br />
+      <input type="text" name="article_auteur" id="mdp" class="form2" placeholder="Auteur" class= form2/><br />
+      <br />
+      <textarea name="article_contenu" id="mdp" class="form2" placeholder="Contenu de l'article" class= form2></textarea><br />
+      <br />
+      <input type="text" class="form2" id="mdp" name="article_extrait" placeholder="Extrait" class= form2 /><br />
+      <br />
+      <input type="submit" class="form2" id="button" value="Envoyer l'article" />
    </form>
    <br />
    <?php if(isset($message)) { echo $message; } ?>
 
-<a href="back.php?page=utilisateurs">Tout les utilisateurs</a> <p>
-   <a href="back.php?page=deconnexion">Déconnexion</a>
+<a href="back.php?page=utilisateurs" class="lien">Tout les utilisateurs</a> <p>
+   <a href="back.php?page=deconnexion" class="lien">Déconnexion</a>
 
 
 

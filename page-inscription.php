@@ -31,11 +31,11 @@ if($AfficherFormulaire==1){
     ?>
     <br/>
     <form method="post" action="http://localhost:8888/ISCC-2020/ISCC-2020-MyDevBlog/front.php?page=inscription" class=form>
-        <input type="text" class= form2 name="pseudo" placeholder= "Pseudo">
+        <input type="text" class= form2 id="pseudo" name="pseudo" placeholder= "Pseudo">
         <br /><br />
-        <input type="password" class= form2 name="mdp" placeholder= "Mot de passe">
+        <input type="password" class= form2 id="mdp" name="mdp" placeholder= "Mot de passe">
         <br /><br />
-        <input type="submit" value="S'inscrire">
+        <input type="submit" id="button" class="form2" value="S'inscrire">
     </form>
     <?php
 }

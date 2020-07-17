@@ -18,13 +18,17 @@
         $bdd = new PDO("mysql:host=localhost;dbname=DevBlog;charset=utf8", "root", "root"); 
 
         $articles = $bdd->query('SELECT * FROM Articles ORDER BY id DESC LIMIT 5');
+        
             ?>
 
-        
+       <table class=tableau>
+           <tr>
         <?php while($a = $articles->fetch()) { ?>
-            <a href="front.php?page=article&id=<?= $a['Id'] ?>"><?= $a['Titre']?></a>
+            <td><a href="front.php?page=article&id=<?= $a['Id'] ?>" class="lien"><?= $a['Titre']?></a>
+            <div><?= $a['Extrait']?></div></td>
         <?php } ?>
-        
+        </tr>
+        </table>
 
         
             

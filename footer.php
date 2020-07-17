@@ -1,7 +1,7 @@
 <div id=footer>
 <footer>
                 <p><B>Camille Padioleau</B><p>
-               Mail : <a href="camillepadioleau31@gmail.com"> camillepadioleau31@gmail.com</a>
+               Mail : <a href="camillepadioleau31@gmail.com" class="lien"> camillepadioleau31@gmail.com</a>
               
                <p>Mes sites :</p>
                 <nav>

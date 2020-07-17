@@ -8,14 +8,27 @@
 .lien{
     padding-right: 50px;
     margin: 0px;
-    color: black;
+    color: rgb(39, 102, 219);
     text-align: right;
     vertical-align: middle ;
 }
 
 .lien:hover{
-    color: rgb(81, 134, 231);
+    color: black;
 }
+
+.lie{
+    padding-right: 50px;
+    margin: 0px;
+    color: black;
+    text-align: right;
+    vertical-align: middle ;
+}
+
+.lie:hover{
+    color: rgb(39, 102, 219);
+}
+
 body{
     font-family: Open-Sans;
     background-color: #eeecec;
@@ -29,30 +42,6 @@ padding-left: 15px;
 font-size: large;
 }
 
-.art1{
-    position: relative;
-    left: 325px;
-}
-
-.art2{
-    position: relative;
-    left: 425px;
-}
-
-.art3{
-    position: relative;
-    left: 525px;
-}
-
-.art4{
-    position: relative;
-    left: 625px;
-}
-
-.art5{
-    position: relative;
-    left: 725px;
-}
 
 #footer{
     border: 3px solid black;
@@ -79,7 +68,7 @@ font-size: large;
     border: 2px solid #e6e6e6; 
 }
 .form:hover{ 
-    border-color: #17c1ff; 
+    border-color: rgb(81, 134, 231); 
 }
 
 .mestitres{
@@ -90,6 +79,59 @@ font-size: large;
 #bjr{
     color: blue;
 }
+
+#contenu{
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+#titl{
+    text-align: center;
+}
+
+#img{
+    position: relative;
+    left: auto;
+    right: auto;
+    float: center;
+    vertical-align: baseline;
+}
+
+
+#msg:hover{ 
+    border-color: rgb(81, 134, 231);  
+}
+
+#name:hover{ 
+    border-color: rgb(81, 134, 231); 
+}
+#mail:hover{ 
+    border-color: rgb(81, 134, 231); 
+}
+
+#pseudo:hover{ 
+    border-color: rgb(81, 134, 231);  
+}
+
+#mdp:hover{ 
+    border-color: rgb(81, 134, 231);  
+}
+
+#button:hover{
+    background-color: rgb(81, 134, 231);
+    box-shadow: black 60px
+ }
+
+ .artil{
+    position: relative;
+    float: center;
+  }
+
+  .tableau{
+      text-align:  center;
+  }
 
 @font-face { font-family: Open-Sans; src: url("OpenSans-Regular.ttf"); }
 
