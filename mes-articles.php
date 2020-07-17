@@ -9,7 +9,7 @@
       <?php  
     $bdd = new PDO("mysql:host=localhost;dbname=DevBlog;charset=utf8", "root", "root"); 
 
-$articles = $bdd->query('SELECT * FROM Articles ORDER BY id DESC ');
+    $articles = $bdd->query('SELECT * FROM Articles ORDER BY id DESC ');
 
     ?>
     

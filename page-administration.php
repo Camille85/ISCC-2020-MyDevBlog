@@ -34,7 +34,7 @@ if(isset($_POST['article_titre'], $_POST['article_image'],$_POST['article_auteur
 <div class=mestitres>
 <h2> Ajouter un article</h2>
 </div>
-   <form method="POST" action="page-administration.php" class=form>
+   <form method="POST" action="back.php?page=administration" class=form>
       <input type="text" name="article_titre" id="mdp" class="form2" placeholder="Titre" class= form2/><br />
       <br />
       <input type="file" name="article_image" id="mdp" class="form2" placeholder="Image" class= form2/><br />
